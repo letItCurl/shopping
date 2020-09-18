@@ -10,6 +10,6 @@ export class AppComponent {
   loadedFeature = 'recipe';
 
   onNavigate(feature: string){
-    this.loadedFeature = feature 
+    this.loadedFeature = feature;
   }
 }

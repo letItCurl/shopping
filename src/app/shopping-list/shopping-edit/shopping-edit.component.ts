@@ -14,7 +14,7 @@ export class ShoppingEditComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(name:string, amount:number, event: MouseEvent){
+  onSubmit(name: string, amount: number, event: MouseEvent){
     event.preventDefault();
     this.addedIngredient.emit(new Ingredient(name, amount));
   }

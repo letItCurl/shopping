@@ -7,15 +7,15 @@ import { Recipe } from '../../recipe.model';
   styleUrls: ['./recipe-item.component.css']
 })
 export class RecipeItemComponent implements OnInit {
-  @Input() recipe: Recipe
+  @Input() recipe: Recipe;
   @Output() clickedRecipe = new EventEmitter<number>();
 
   constructor() { }
 
   ngOnInit(): void {
-    this.clickedRecipe.emit(0)
+    this.clickedRecipe.emit(0);
   }
   onClick(id: number){
-    this.clickedRecipe.emit(id)
+    this.clickedRecipe.emit(id);
   }
 }
